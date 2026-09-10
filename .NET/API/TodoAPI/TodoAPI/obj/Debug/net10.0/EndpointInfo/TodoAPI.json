@@ -5,7 +5,19 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Products": {
+    "/api/Employee/top": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Products/GetTime": {
       "get": {
         "tags": [
           "Products"
@@ -15,30 +27,13 @@
             "description": "OK"
           }
         }
-      },
-      "post": {
+      }
+    },
+    "/api/Products/getProd": {
+      "get": {
         "tags": [
           "Products"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Product"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Product"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Product"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -89,6 +84,37 @@
           }
         }
       }
+    },
+    "/api/Products": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -118,6 +144,9 @@
     }
   },
   "tags": [
+    {
+      "name": "Employee"
+    },
     {
       "name": "Products"
     }

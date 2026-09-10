@@ -16,7 +16,7 @@ namespace TodoAPI.Controllers
             _timeSystem = timeSystem;
         }
 
-        [HttpGet]
+        [HttpGet("GetTime")]
         public IActionResult GetTime()
         {
             var getSystemTime = _timeSystem.GetCurrentTime();
@@ -52,7 +52,7 @@ namespace TodoAPI.Controllers
         };
 
 
-        [HttpGet]
+        [HttpGet("getProd")]
         public IActionResult GetProduct()
         {
             return Ok(products);
