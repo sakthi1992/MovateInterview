@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TodoAPI.Models;
+using TodoAPI.Services;
 
 namespace TodoAPI.Controllers
 {
@@ -8,6 +9,22 @@ namespace TodoAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+
+        private readonly ISystemTime _timeSystem;
+        public ProductsController(ISystemTime timeSystem)
+        {
+            _timeSystem = timeSystem;
+        }
+
+        [HttpGet]
+        public IActionResult GetTime()
+        {
+            var getSystemTime = _timeSystem.GetCurrentTime();
+            return Ok(new
+            {
+                serverTime = getSystemTime
+            });
+        }
 
         private static readonly List<Product> products = new()
         {

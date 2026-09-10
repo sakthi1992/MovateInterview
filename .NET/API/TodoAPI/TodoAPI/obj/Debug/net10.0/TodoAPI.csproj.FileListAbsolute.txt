@@ -35,3 +35,4 @@ C:\Users\sakthi\Desktop\Interview_Project\MovateInterview\.NET\API\TodoAPI\TodoA
 C:\Users\sakthi\Desktop\Interview_Project\MovateInterview\.NET\API\TodoAPI\TodoAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\sakthi\Desktop\Interview_Project\MovateInterview\.NET\API\TodoAPI\TodoAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\sakthi\Desktop\Interview_Project\MovateInterview\.NET\API\TodoAPI\TodoAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sakthi\Desktop\Interview_Project\MovateInterview\.NET\API\TodoAPI\TodoAPI\obj\Debug\net10.0\TodoAPI.sourcelink.json

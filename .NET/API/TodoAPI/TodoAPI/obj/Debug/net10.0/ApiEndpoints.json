@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "TodoAPI.Controllers.ProductsController",
+    "Method": "GetTime",
+    "RelativePath": "api/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TodoAPI.Controllers.ProductsController",
     "Method": "GetProduct",
     "RelativePath": "api/Products",
     "HttpMethod": "GET",
